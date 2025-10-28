@@ -75,7 +75,7 @@ Jeśli tak — wypisz, które elementy się powtarzają.
 
 ## Zadania na EXPa!
 
-> [!IMPORTANT] Uwaga!
+> **Uwaga!**
 > Zadania na EXP wyślij na swoje publiczne repozytorium a link do niego wyślij prowadzącemu.
 > Jest to warunek uzyskania EXPa!
 

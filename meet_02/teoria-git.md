@@ -105,5 +105,5 @@ git push
 git push -u origin main # przy pierwszym razie
 ```
 
-> [!IMPORTANT] Uwaga!
+> **Uwaga!**
 > Często przed zaczęciem pracy nad kodem warto wykonać `git pull`, tak, aby nowy kod nie konfliktował ze starym.
