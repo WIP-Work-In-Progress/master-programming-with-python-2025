@@ -76,12 +76,12 @@ person: dict[str, str | int] = {
 Najważniejsze operacje:
 
 ```python
-name: str = person["name"]          # pobranie wartości
-name: str = person.get("name")      # pobranie wartości (lepsze)
-person["age"] = 26                  # zmiana wartości
-person["email"] = "a@b.pl"          # dodanie nowej pary
-del person["city"]                  # usunięcie elementu
-for key, value in person.items():   # person.keys(), person.values()
+name: str = person["name"]                  # pobranie wartości
+name: str = person.get("name", "ANON")      # pobranie wartości (lepsze)
+person["age"] = 26                          # zmiana wartości
+person["email"] = "a@b.pl"                  # dodanie nowej pary
+del person["city"]                          # usunięcie elementu
+for key, value in person.items():           # person.keys(), person.values()
     print(key, value)
 ```
 
