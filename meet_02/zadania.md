@@ -93,7 +93,7 @@ Następnie:
 Poproś użytkownika o zdanie.
 Następnie:
 
-- Rozbij tekst na słowa i zapisz w liście.
+- Rozbij tekst na słowa (`"ala ma kota".split()`) i zapisz w liście.
 - Utwórz słownik, w którym kluczem jest słowo, a wartością liczba jego wystąpień.
 - Dodatkowo utwórz zbiór unikalnych słów i wypisz jego długość.
 
@@ -112,7 +112,7 @@ students = [
 
 - Utwórz z niej słownik, w którym kluczem jest imię, a wartością ocena.
 - Wypisz wszystkich studentów z oceną powyżej 3.
-- Oblicz średnią ocen.
+- Oblicz średnią ocen wszystkich studentów.
 
 #### Zadanie 4 — Analiza zakupów (3 EXP)
 

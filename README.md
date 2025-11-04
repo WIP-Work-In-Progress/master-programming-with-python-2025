@@ -20,7 +20,7 @@ Wprowadzenie do obsługi kontroli wersji z wykorzystaniem git oraz Github/Gitlab
 
 ### 3. Funkcje
 
-_2025-11-03_
+_2025-11-04_
 
 Funkcje oraz zwracanie z nich wartości. Funkcje `lambda`. Rekurencja. Konwencja DRY.
 
