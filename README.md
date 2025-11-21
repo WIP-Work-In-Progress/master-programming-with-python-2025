@@ -26,7 +26,7 @@ Funkcje oraz zwracanie z nich wartości. Funkcje `lambda`. Rekurencja. Konwencja
 
 ### 4. Podsumowanie pierwszej części oraz ciekawe różności
 
-_2025-11-18_
+~~_2025-11-18_~~ - ZMIANA NA _2025-11-22_
 
 Składanie struktur danych. Praca z modułami. Obsługa błędów oraz wyjątków. Podsumowanie wiadomości oraz mini-projekt.
 
