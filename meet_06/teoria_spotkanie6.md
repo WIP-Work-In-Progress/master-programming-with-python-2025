@@ -4,7 +4,14 @@
 
 **Hermetyzacja** to ukrywanie wewnętrznych szczegółów implementacji i udostępnianie tylko tego, co potrzebne.
 
-### Konwencje nazewnictwa w Pythonie
+### Konwencje nazewnictwa:
+
+- `nazwa` - publiczny atrybut/metoda
+- `_nazwa` - chroniony (dla wewnętrznego użytku, ale dostępny)
+- `__nazwa` - prywatny (name mangling, trudno dostępny z zewnątrz)
+
+
+### Przykład
 
 ```python
 class KontoBankowe:
