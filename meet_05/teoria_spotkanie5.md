@@ -142,7 +142,7 @@ class Pies(Zwierze):
 
 # Kot dziedziczy po Zwierzęciu
 class Kot(Zwierze):
-    def miauczaj(self):
+    def miaucz(self):
         print(f"{self.imie}: Miau!")
 
 burek = Pies("Burek")
