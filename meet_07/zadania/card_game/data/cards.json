@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Ognisty Cios",
+    "cost": 2,
+    "attack": 5,
+    "type": "attack"
+  },
+  {
+    "name": "Lodowy Miecz",
+    "cost": 3,
+    "attack": 7,
+    "type": "attack"
+  },
+  {
+    "name": "Leczenie",
+    "cost": 2,
+    "heal": 5,
+    "type": "heal"
+  },
+  {
+    "name": "Potężne Uderzenie",
+    "cost": 4,
+    "attack": 10,
+    "type": "attack"
+  },
+  {
+    "name": "Tarcza",
+    "cost": 1,
+    "defense": 3,
+    "type": "defense"
+  },
+  {
+    "name": "Błyskawica",
+    "cost": 5,
+    "attack": 15,
+    "type": "attack"
+  }
+]

@@ -1,0 +1,63 @@
+{
+  "start": {
+    "description": "Wchodzisz do ciemnej jaskini. Słyszysz echo kroków.",
+    "monster": null,
+    "gold": 0,
+    "exits": {
+      "north": "corridor",
+      "east": "treasure"
+    }
+  },
+  "corridor": {
+    "description": "Długi korytarz. Czujesz obecność czegoś złego.",
+    "monster": "goblin",
+    "gold": 0,
+    "exits": {
+      "south": "start",
+      "north": "crossroads",
+      "east": "armory"
+    }
+  },
+  "treasure": {
+    "description": "Mała komnata ze skarbem! Znajdujesz tu złoto.",
+    "monster": null,
+    "gold": 50,
+    "exits": {
+      "west": "start"
+    }
+  },
+  "armory": {
+    "description": "Stara zbrojownia. Coś się tu kryje...",
+    "monster": "skeleton",
+    "gold": 20,
+    "exits": {
+      "west": "corridor"
+    }
+  },
+  "crossroads": {
+    "description": "Skrzyżowanie trzech korytarzy. Dokąd pójdziesz?",
+    "monster": null,
+    "gold": 0,
+    "exits": {
+      "south": "corridor",
+      "west": "troll_cave",
+      "north": "boss"
+    }
+  },
+  "troll_cave": {
+    "description": "Jaskinia trolla. Śmierdzi tu okropnie!",
+    "monster": "troll",
+    "gold": 30,
+    "exits": {
+      "east": "crossroads"
+    }
+  },
+  "boss": {
+    "description": "Ogromna sala. Widzisz potężnego smoka!",
+    "monster": "dragon",
+    "gold": 0,
+    "exits": {
+      "south": "crossroads"
+    }
+  }
+}
