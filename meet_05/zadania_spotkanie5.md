@@ -56,40 +56,6 @@ Następnie stwórz klasy dziedziczące:
 
 Stwórz listę ludzi (rodzinkę) i wywołaj `dzwiek()` dla każdego.
 
-## Hermetyzacja
-
-### Zadanie 5: Klasa KontoBankowe
-
-Stwórz klasę `KontoBankowe` z:
-
-- prywatnym atrybutem `__saldo`
-- metodą `wplac(kwota)` - dodaje kwotę do salda (kwota > 0)
-- metodą `wyplac(kwota)` - odejmuje kwotę (jeśli jest wystarczająco środków)
-- metodą `pokaz_saldo()` - zwraca aktualne saldo
-
-```python
-konto = KontoBankowe(1000)
-konto.wplac(500)
-print(konto.pokaz_saldo())  # 1500
-konto.wyplac(200)
-print(konto.pokaz_saldo())  # 1300
-konto.wyplac(2000)  # Komunikat: Brak wystarczających środków
-```
-
-### Zadanie 6: Klasa Haslo
-
-Stwórz klasę `Haslo`, która:
-
-- przechowuje zaszyfrowane hasło (prywatny atrybut `__haslo_hash`)
-- ma metodę `ustaw_haslo(haslo)` - zapisuje hash hasła (użyj `hash(haslo)`)
-- ma metodę `sprawdz_haslo(haslo)` - sprawdza, czy hasło jest poprawne
-
-```python
-h = Haslo()
-h.ustaw_haslo("tajne123")
-print(h.sprawdz_haslo("tajne123"))  # True
-print(h.sprawdz_haslo("bledne"))    # False
-```
 
 ## Zadania na EXPa! 🌟
 

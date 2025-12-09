@@ -173,43 +173,6 @@ auto = Samochod("Toyota", 4)
 auto.info()  # Toyota ma 4 drzwi
 ```
 
-## Hermetyzacja (enkapsulacja)
-
-**Hermetyzacja** to ukrywanie szczegółów implementacji i udostępnianie tylko tego, co potrzebne.
-
-### Konwencje nazewnictwa:
-
-- `nazwa` - publiczny atrybut/metoda
-- `_nazwa` - chroniony (dla wewnętrznego użytku, ale dostępny)
-- `__nazwa` - prywatny (name mangling, trudno dostępny z zewnątrz)
-
-### Konwencje prywatności w Pythonie
-
-```python
-class BankAccount:
-    def __init__(self, numer: str, saldo: float):
-        self.numer = numer  # publiczny
-        self._saldo = saldo  # "chroniony" (konwencja)
-        self.__pin = "1234"  # "prywatny" (name mangling)
-
-    def _waliduj_pin(self, pin: str) -> bool:
-        return pin == self.__pin
-
-    def wyplac(self, kwota: float, pin: str):
-        if not self._waliduj_pin(pin):
-            print("Błędny PIN!")
-            return
-        if kwota > self._saldo:
-            print("Brak środków!")
-            return
-        self._saldo -= kwota
-        print(f"Wypłacono {kwota} zł")
-
-konto = BankAccount("123456", 1000)
-konto.wyplac(100, "1234")  # Wypłacono 100 zł
-konto.wyplac(100, "0000")  # Błędny PIN!
-```
-
 ## Najważniejsze wskazówki
 
 1. **Jedna klasa = jedna odpowiedzialność** - nie pakuj wszystkiego do jednej klasy

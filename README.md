@@ -34,13 +34,13 @@ Składanie struktur danych. Praca z modułami. Obsługa błędów oraz wyjątkó
 
 _2025-11-25_
 
-Klasy, obiekty, metody, atrybuty. Dziedziczenie oraz hermetyzacja.
+Klasy, obiekty, metody, atrybuty. Dziedziczenie.
 
 ### 6. Praktyczne zastosowania programowania obiektowego
 
 _2025-12-02_
 
-Gettery i settery. Polimorfizm oraz abstrakcja. Praktyczne przykłady oraz zadania.
+Hermetyzacja, polimorfizm oraz kompozycja. Praktyczne przykłady oraz zadania.
 
 ### 7. Projekt
 
