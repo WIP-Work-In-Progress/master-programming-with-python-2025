@@ -72,9 +72,10 @@ class Game:
                 return True
         
         # Zbieranie złota
-        if current_room.gold > 0 and not current_room.visited:
+        if current_room.gold > 0:
             self.player.gold += current_room.gold
             current_room.gold = 0
+            print("Zebrano")
 
         current_room.show_exits()
         
