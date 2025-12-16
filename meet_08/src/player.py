@@ -15,8 +15,7 @@ class Player:
         self.angle = 0
 
     def _create_gun_shape(self):
-        # Barrel (gun) - just solid gray
-        pygame.draw.rect(self.base_image, c.GRAY, (0, 0, c.PLAYER_WIDTH, c.PLAYER_HEIGHT))
+        ...
 
     def update(self, mouse_pos):
         self._calculate_angle(mouse_pos)
@@ -28,8 +27,8 @@ class Player:
         self.angle = math.degrees(math.atan2(-dy, dx)) - 90
 
     def _rotate_image(self):
+        # change for rotated image
         self.image = pygame.transform.rotate(self.base_image, self.angle)
-        # Set pivot at bottom center of barrel
         offset_y = c.PLAYER_HEIGHT // 2
         rad = math.radians(self.angle)
         rotated_offset_x = offset_y * math.sin(rad)
@@ -40,21 +39,8 @@ class Player:
                            self.pivot_y - rotated_offset_y)
 
     def draw(self, screen):
-        self._draw_tank_base(screen)
         screen.blit(self.image, self.rect)
 
-    def _draw_tank_base(self, screen):
-        base_rect = pygame.Rect(
-            self.pivot_x - c.TANK_BASE_WIDTH // 2,
-            self.pivot_y,
-            c.TANK_BASE_WIDTH,
-            c.TANK_BASE_HEIGHT
-        )
-        pygame.draw.rect(screen, c.DARK_GRAY, base_rect)
 
     def get_gun_tip_and_direction(self):
-        rad = math.radians(self.angle + 90)
-        tip_x = self.pivot_x + math.cos(rad) * c.PLAYER_HEIGHT
-        tip_y = self.pivot_y - math.sin(rad) * c.PLAYER_HEIGHT
-        # Return tip position and direction vector
-        return (tip_x, tip_y), (math.cos(rad), -math.sin(rad))
+       ...
