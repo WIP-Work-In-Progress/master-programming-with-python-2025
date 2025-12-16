@@ -26,7 +26,7 @@ pip install pygame
 pip freeze > requirements.txt
 ```
 
-> [!note] Plik `requirements.txt`
+> *Plik `requirements.txt`*
 > Dzięki niemu można łatwo pobrać zależności (moduły) projektu uruchamiając komendę:
 > `pip install -r requirements.txt`
 
@@ -36,5 +36,5 @@ import pygame
 ```
 Kiedy uruchomimy plik który to ma, to powinno się wyświetlić coś w stylu "Hello from Pygame community ..."
 
-> [!warning] Uwaga!
+> *Uwaga!*
 > Kiedy jesteś na systemie innym niż Windows, to możliwe jest, że komendy `pip` i `python` trzeba będzie zastąpić `pip3` oraz `python3`!
